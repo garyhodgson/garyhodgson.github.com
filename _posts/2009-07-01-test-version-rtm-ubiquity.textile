@@ -1,0 +1,14 @@
+---
+layout: post
+title: Test Version of RTM Ubiquity 0.3.9 Available
+---
+
+h2. {{ page.title }}
+
+A version of the upcoming RTM Ubiquity command is available for beta testing: http://gist.github.com/138132
+
+Issues addressed are listed here: http://github.com/garyhodgson/ubiquity-rtm-api/issues/labels/0.3.9
+
+The main reason for the release will be to mitigate the breakage that the forthcoming Ubiquity (0.5) release will cause.  
+
+Also worth noting, the documentation will be slightly out of date with this release. Fixing that is on the to-do list.

@@ -1,8 +1,0 @@
----
-layout: post
-title: Blog Start
----
-
-h2. {{ page.title }}
-
-Started a blog for various small open-source projects, including the Ubiquity commands.

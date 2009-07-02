@@ -1,38 +1,28 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-	"http://www.w3.org/TR/html4/loose.dtd">
-<html>
+---
+layout: default
+title: garyhodgson.github.com
+---
 
-<head>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-	<title>garyhodgson.github.com</title>
-	<link rel="stylesheet" href="css/ubiquity.css" type="text/css" media="screen"  charset="utf-8">
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-  </head>
-	<body>
-	
-	<div id="container">
-
-			<img src="images/ubiquity_side.png"/>
-		
-		<div id="title">
-			A place to collect my various <a href="https://ubiquity.mozilla.com/">Ubiquity</a> commands.<br><br>
-			<span id="feedback"><a href="mailto:contact@garyhodgson.com">Feedback</a></span>
-		</div>
-		
-		<div id="cmdList">
-			<ul>
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> -- <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  
+  <h1>Ubiquity Commands</h1>
+  <ul class="posts">
 				<li><a href="http://gist.github.com/19959">Amazon Local - Blended Search</a></li>
-				<li><a href="http://gist.github.com/24257">Google Bookmarks</a></li>
-				<li><a href="http://gist.github.com/24256">Oracle Documentation</a></li>
-				<li><a href="http://garyhodgson.github.com/ubiquity-rtm-api">Remember The Milk - Full Version</a></li>
-				<li><a href="http://gist.github.com/24258">Remember The Milk - Bookmarklet Version</a></li>
-				<li><a href="http://gist.github.com/17245">TiddlyWiki</a></li>
-				<li><a href="http://gist.github.com/20945">Mininova and Piratebay Torrent Search</a></li>
-				<li><a href="http://gist.github.com/19964">Ebookshare Torrent Search</a></li>
-				<li><a href="http://gist.github.com/20103">Bit.ly</a></li>
-			</ul>
-		</div>
-	</div>
-</body>
-
-</html>
+			<li><a href="http://gist.github.com/24257">Google Bookmarks</a></li>
+			<li><a href="http://gist.github.com/24256">Oracle Documentation</a></li>
+			<li><a href="http://garyhodgson.github.com/ubiquity-rtm-api">Remember The Milk - Full Version</a></li>
+			<li><a href="http://gist.github.com/24258">Remember The Milk - Bookmarklet Version</a></li>
+			<li><a href="http://gist.github.com/17245">TiddlyWiki</a></li>
+			<li><a href="http://gist.github.com/20945">Mininova and Piratebay Torrent Search</a></li>
+			<li><a href="http://gist.github.com/19964">Ebookshare Torrent Search</a></li>
+			<li><a href="http://gist.github.com/20103">Bit.ly</a></li>
+	</ul>
+	
+</div>
+  

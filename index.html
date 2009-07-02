@@ -4,19 +4,21 @@ title: garyhodgson.github.com
 ---
 
 <div id="home">
+
   <h1>Blog Posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> -- <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><span class='time'>{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
-  
+ 
+ 
   <h1>Ubiquity Commands</h1>
   <ul class="posts">
-				<li><a href="http://gist.github.com/19959">Amazon Local - Blended Search</a></li>
+			<li><a href="http://garyhodgson.github.com/ubiquity-rtm-api">Remember The Milk</a></li>
+			<li><a href="http://gist.github.com/19959">Amazon Local - Blended Search</a></li>
 			<li><a href="http://gist.github.com/24257">Google Bookmarks</a></li>
 			<li><a href="http://gist.github.com/24256">Oracle Documentation</a></li>
-			<li><a href="http://garyhodgson.github.com/ubiquity-rtm-api">Remember The Milk - Full Version</a></li>
 			<li><a href="http://gist.github.com/24258">Remember The Milk - Bookmarklet Version</a></li>
 			<li><a href="http://gist.github.com/17245">TiddlyWiki</a></li>
 			<li><a href="http://gist.github.com/20945">Mininova and Piratebay Torrent Search</a></li>
@@ -24,5 +26,10 @@ title: garyhodgson.github.com
 			<li><a href="http://gist.github.com/20103">Bit.ly</a></li>
 	</ul>
 	
+	<h1>Latest Twitter Updates</h1>
+	<ul class="posts" id="twitter_update_list"><img src="images/ajax-loader.gif"></ul>
+
 </div>
   
+<script type="text/javascript" src="twitter.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/garyhodgson.json?callback=twitterCallback2&amp;count=5"></script>

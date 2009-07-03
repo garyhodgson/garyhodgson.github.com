@@ -37,11 +37,6 @@ p {
 a {
 	color: #a00;
 	text-decoration:none;
-	padding: .5em;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-khtml-border-radius: 5px;
-	border-radius: 5px;   
 }
     
 a:visited {
@@ -50,7 +45,7 @@ a:visited {
 
 a:hover {  
 	background: rgba(164, 173, 183, .15);  
-}  
+}
 
 table {
   font-size: inherit;
@@ -69,6 +64,14 @@ ul.posts {
   margin-bottom: 2em;
 }
 
+	ul.posts a {
+		padding: .5em;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-khtml-border-radius: 5px;
+		border-radius: 5px;   
+	}
+
 ul.commands {
   list-style-type: none;
   width: 27em;
@@ -76,16 +79,24 @@ ul.commands {
   margin-left: -5px;
 }    
 
+	ul.commands a {
+		padding: .5em;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-khtml-border-radius: 5px;
+		border-radius: 5px;   
+	}
+
 ul.tweets {
   list-style-type: none;
   width: 40em;
   margin-bottom: 2em;
 }
 
-  ul .time {
-    color: #aaa;
-    font-size: 80%;
-  }
+ul .time {
+	color: #aaa;
+	font-size: 80%;
+}
 
 
 /*****************************************************************************/
@@ -119,8 +130,13 @@ ul.tweets {
     color: #a00;
     text-decoration: none;
     margin-left: -5px;
-  }
-
+	padding: .5em;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;   
+	}
+	
   .site .title a:hover {
     color: black;
   }

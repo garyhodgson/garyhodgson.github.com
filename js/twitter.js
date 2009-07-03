@@ -5,7 +5,7 @@ function twitterCallback2(obj) {
 	for (var i=0; i<twitters.length; i++){
 		username = twitters[i].user.screen_name
 		if (!twitters[i].in_reply_to_status_id){
-			statusHTML += ('<li><span class="time">'+relative_time(twitters[i].created_at)+'</span> '+twitters[i].text+'</li>')
+			statusHTML += ('<li><span class="time">'+relative_time(twitters[i].created_at)+'</span>&nbsp;'+twitters[i].text+'</li>')
 		}
 	}
 	document.getElementById('twitter_update_list').innerHTML = statusHTML;

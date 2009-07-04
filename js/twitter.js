@@ -5,7 +5,7 @@ function twitterCallback2(obj) {
 	for (var i=0; i<twitters.length; i++){
 		username = twitters[i].user.screen_name
 		if (!twitters[i].in_reply_to_status_id){
-			text_value = twitters[i].text.replace(/(https?:\/\/([-\w\.]+)+(:\d+)?(\/([\w/_\.]*(\?\S+)?)?)?)/g, '&lt;$1&gt;');
+			text_value = twitters[i].text.replace(/(https?:\/\/([-\w\.]+)+(:\d+)?(\/([\w/_\.]*(\?\S+)?)?)?)/g, '<a href="$1">$1</a>');
 			statusHTML += ('<li><span class="time">'+relative_time(twitters[i].created_at)+'</span>&nbsp;'+text_value+'</li>')
 		}
 	}

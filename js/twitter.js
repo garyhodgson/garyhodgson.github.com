@@ -5,11 +5,13 @@ function twitterCallback2(obj) {
 	for (var i=0; i<twitters.length; i++){
 		username = twitters[i].user.screen_name
 		if (!twitters[i].in_reply_to_status_id){
-			statusHTML += ('<li><span class="time">'+relative_time(twitters[i].created_at)+'</span>&nbsp;'+twitters[i].text+'</li>')
+			text_value = twitters[i].text.replace(/(https?:\/\/([-\w\.]+)+(:\d+)?(\/([\w/_\.]*(\?\S+)?)?)?)/g, '&lt;$1&gt;');
+			statusHTML += ('<li><span class="time">'+relative_time(twitters[i].created_at)+'</span>&nbsp;'+text_value+'</li>')
 		}
 	}
 	document.getElementById('twitter_update_list').innerHTML = statusHTML;
 }
+
 
 function relative_time(time_value) {
   var values = time_value.split(" ");

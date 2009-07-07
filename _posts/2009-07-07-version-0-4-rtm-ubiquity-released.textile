@@ -3,24 +3,24 @@ layout: post
 title: Version 0.4 of RTM Ubiquity released
 ---
 
-h2. {{ page.title }}  
+h2. {{ page.title }}
+<br/>
 
 
 h3. About  
-
 
 This release consists of several fixes, plus a pre-emptive modification for the upcoming 0.5 release of Ubiquity.  
 
     
 h3. Changes
-
+<br/>
 
 * [Issue #3](http://github.com/garyhodgson/ubiquity-rtm-api/issues/#issue/3) : Can't Complete Tasks with "Every ..." Repetitions
 * [Issue #4](http://github.com/garyhodgson/ubiquity-rtm-api/issues/#issue/4) : remove scrollbar from view tasks
 * [Issue #9](http://github.com/garyhodgson/ubiquity-rtm-api/issues/#issue/9) : Tasks not added when default list is a smart list
 * [Issue #11](http://github.com/garyhodgson/ubiquity-rtm-api/issues/#issue/11) : Upcoming Ubiquity 0.5 release will break all RTM commands
 * I have also refactored some of the code which I belive makes it more robust, and less prone to errors when initially loading tasks and task lists.  
-
+<br/>
 
 h3. Notes
 

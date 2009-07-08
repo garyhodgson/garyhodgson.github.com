@@ -6,11 +6,9 @@ title: Version 0.4 of RTM Ubiquity released
 h2. {{ page.title }}
 <br/>
 
-
 h3. About  
 
-This release consists of several fixes, plus a pre-emptive modification for the upcoming 0.5 release of Ubiquity.  
-
+This [release](http://garyhodgson.github.com/ubiquity-rtm-api/) consists of several fixes, plus a pre-emptive modification for the upcoming 0.5 release of Ubiquity.  
     
 h3. Changes
 <br/>
@@ -23,7 +21,6 @@ h3. Changes
 <br/>
 
 h3. Notes
-
 
 The [upcoming release](https://wiki.mozilla.org/Labs/Ubiquity/Ubiquity_0.5_Release_Notes) of Ubiquity makes some pretty major changes and consequently it breaks compatibility with previous commands.  You can read more [here](http://www.azarask.in/blog/post/ubiquity-05-conondrum/)  In order to handle this break without having to manage multiple releases of the commands (hey, it's supposed to be easy to author commands right?) I have modified the commands to recognise if the new parser is in effect, and if so to use the new commands, otherwise to use the older version.
 

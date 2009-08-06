@@ -5,10 +5,10 @@ title: Test Version of RTM Ubiquity 0.3.9 Available
 
 h2. {{ page.title }}
 
-A new version of the upcoming RTM Ubiquity command is available for beta testing: [here](http://gist.github.com/138132).
+A new version of the upcoming RTM Ubiquity command is available for beta testing: "here":http://gist.github.com/138132.
 
-The issues addressed are listed [here](http://github.com/garyhodgson/ubiquity-rtm-api/issues/closed#label/0.4).
+The issues addressed are listed "here":http://github.com/garyhodgson/ubiquity-rtm-api/issues/closed#label/0.4.
 
-The main reason for the release will be to mitigate the breakage that the forthcoming Ubiquity release (0.5) [will cause](http://github.com/garyhodgson/ubiquity-rtm-api/issues/#issue/11).  
+The main reason for the release will be to mitigate the breakage that the forthcoming Ubiquity release (0.5) "will cause":http://github.com/garyhodgson/ubiquity-rtm-api/issues/#issue/11.  
 
-Also worth noting, the documentation will be slightly out of date with this release. Fixing that is on the [to-do list](http://github.com/garyhodgson/ubiquity-rtm-api/issues/#issue/12).
+Also worth noting, the documentation will be slightly out of date with this release. Fixing that is on the "to-do list":http://github.com/garyhodgson/ubiquity-rtm-api/issues/#issue/12.

@@ -1,0 +1,10 @@
+---
+layout: post
+title: Status Update
+---
+
+h2. {{ page.title }}
+
+At the moment there are a few problems with version 0.4 of the RTM Ubiquity command.  The most urgent one being that the call to determine tasks belonging to smart lists hangs the browser completely until it is finished.  This is detailed in "Issue 13":http://github.com/garyhodgson/ubiquity-rtm-api/issues#issue/13).  A solution is underway, but this has hit a further problem whereby the smart lists are not fully updated.  See "this RTM group post":http://groups.google.com/group/rememberthemilk-api/browse_thread/thread/f727fb64d65414d2 for more information.
+
+As soon as I have a working version I will release it.

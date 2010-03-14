@@ -1,0 +1,15 @@
+---
+layout: post
+title: Reference post for old Ubiquity Commands
+---
+
+h2. {{ page.title }}
+<br/>
+
+"Remember The Milk":http://garyhodgson.github.com/ubiquity-rtm-api
+"Remember The Milk - Bookmarklet Version":http://gist.github.com/24258
+"Amazon Local - Blended Search":http://gist.github.com/19959
+"Google Bookmarks":http://gist.github.com/24257
+"Oracle Documentation":http://gist.github.com/24256
+"TiddlyWiki":http://gist.github.com/17245
+"Bit.ly":http://gist.github.com/20103

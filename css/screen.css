@@ -75,7 +75,7 @@ ul.posts {
 
 ul.commands {
   list-style-type: none;
-  width: 27em;
+  width: 30em;
   margin-bottom: 2em;
   margin-left: -5px;
 }    
@@ -90,7 +90,7 @@ ul.commands {
 
 ul.tweets {
   list-style-type: none;
-  width: 40em;
+  width: 30em;
   margin-bottom: 2em;
 }
 

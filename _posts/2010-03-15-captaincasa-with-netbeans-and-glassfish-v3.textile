@@ -41,7 +41,7 @@ h3. Initial Steps
 
 <a href="/images/CCinNBHowTo\007_CreatNetbeansProject_4.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\007_CreatNetbeansProject_4.JPG" /></a>
 
-* Build and Deploy the app from within Netbeans.  This will create the Netbeans build directory structure and ensure the app can be deployed on Glassfish. The **build** directory should be created, and the application successfully deployed. [008]
+* Build and Deploy the app from within Netbeans.  This will create the Netbeans build directory structure and ensure the app can be deployed on Glassfish. The **build** directory should be created, and the application successfully deployed.
 
 <a href="/images/CCinNBHowTo\008_BuildDeployApponGlassfish.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\008_BuildDeployApponGlassfish.JPG" /></a>
 

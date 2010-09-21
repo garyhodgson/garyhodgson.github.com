@@ -18,36 +18,36 @@ h3. Initial Steps
 
 * Choose project in CaptainCasa Editor
 
-<a href="/images/CCinNBHowTo\002_ChooseProject.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\002_ChooseProject.JPG" /></a>
+<a href="/images/CCinNBHowTo/002_ChooseProject.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo/002_ChooseProject.JPG" /></a>
 
 * Create JSP File
 ** Note: When opening the test page an error will display because the server is not running.
 
-<a href="/images/CCinNBHowTo\003_CreateJSP.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\003_CreateJSP.JPG" /></a>
+<a href="/images/CCinNBHowTo/003_CreateJSP.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo/003_CreateJSP.JPG" /></a>
 
 * Start Netbeans
 * Create a new Project: Java Web Application with Existing Sources
 ** Choose the location of the project created by CaptainCasa above
 
-<a href="/images/CCinNBHowTo\004_CreateNetbeansProject.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\004_CreateNetbeansProject.JPG" /></a>
+<a href="/images/CCinNBHowTo/004_CreateNetbeansProject.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo/004_CreateNetbeansProject.JPG" /></a>
 
 ** Choose Glassfish v3  server (you may have to install and configure this if you have not already done so)
 
-<a href="/images/CCinNBHowTo\005_CreatNetbeansProject_2.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\005_CreatNetbeansProject_2.JPG" /></a>
+<a href="/images/CCinNBHowTo/005_CreatNetbeansProject_2.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo/005_CreatNetbeansProject_2.JPG" /></a>
 
 ** Netbeans should pick up the correct folder structure
 
-<a href="/images/CCinNBHowTo\006_CreatNetbeansProject_3.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\006_CreatNetbeansProject_3.JPG" /></a>
+<a href="/images/CCinNBHowTo/006_CreatNetbeansProject_3.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo/006_CreatNetbeansProject_3.JPG" /></a>
 
-<a href="/images/CCinNBHowTo\007_CreatNetbeansProject_4.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\007_CreatNetbeansProject_4.JPG" /></a>
+<a href="/images/CCinNBHowTo/007_CreatNetbeansProject_4.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo/007_CreatNetbeansProject_4.JPG" /></a>
 
 * Build and Deploy the app from within Netbeans.  This will create the Netbeans build directory structure and ensure the app can be deployed on Glassfish. The **build** directory should be created, and the application successfully deployed.
 
-<a href="/images/CCinNBHowTo\008_BuildDeployApponGlassfish.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\008_BuildDeployApponGlassfish.JPG" /></a>
+<a href="/images/CCinNBHowTo/008_BuildDeployApponGlassfish.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo/008_BuildDeployApponGlassfish.JPG" /></a>
 
 * Return to CaptainCasa Editor, and open the Project Setup Configuration Options
 
-<a href="/images/CCinNBHowTo\009_ConfigureCaptainCasaProject.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\009_ConfigureCaptainCasaProject.JPG" /></a>
+<a href="/images/CCinNBHowTo/009_ConfigureCaptainCasaProject.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo/009_ConfigureCaptainCasaProject.JPG" /></a>
 
 ** Set @webhostport@ to the Glassfish host and port
 ** Set @webcontentdeploydirectory@ to the @web@ directory within the Glassfish build directory
@@ -56,7 +56,7 @@ h3. Initial Steps
 * **Important:** Choose 'Refresh' from the Project menu
 * Reload the JSP file in the CaptainCasa Editor, and the jsp preview should display
 
-<a href="/images/CCinNBHowTo\010_ReloadProjectAndPreview.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\010_ReloadProjectAndPreview.JPG" /></a>
+<a href="/images/CCinNBHowTo/010_ReloadProjectAndPreview.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo/010_ReloadProjectAndPreview.JPG" /></a>
 
 
 h3. Keeping the build environment clean
@@ -107,7 +107,7 @@ h3. Opening the page in Glassfish
 
 * Create some content in the JSP using the Editor (I found I had to add at least one item to the JSP in order for the page to display when deployed on Glassfish in later steps, otherwise it threw a Null Pointer Exception on startup).
 
-<a href="/images/CCinNBHowTo\011_CreateContentInJSP.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\011_CreateContentInJSP.JPG" /></a>
+<a href="/images/CCinNBHowTo/011_CreateContentInJSP.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo/011_CreateContentInJSP.JPG" /></a>
 
 ** Save the project
 * Create the starter file
@@ -115,15 +115,15 @@ h3. Opening the page in Glassfish
 ** Give the name **index** and make any choices as needed by the project.  Any name is allowed, but **index** is usually the default for web servers.
 ** Press 'Create Applet / JNLP' to create the file
 
-<a href="/images/CCinNBHowTo\012_CreateStarterPage.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\012_CreateStarterPage.JPG" /></a>
+<a href="/images/CCinNBHowTo/012_CreateStarterPage.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo/012_CreateStarterPage.JPG" /></a>
 
 * In Netbeans, clean and redeploy the application (it may also be required to restart the server)
 
-<a href="/images/CCinNBHowTo\013_DeployApplicationToGlassfish.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\013_DeployApplicationToGlassfish.JPG" /></a>
+<a href="/images/CCinNBHowTo/013_DeployApplicationToGlassfish.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo/013_DeployApplicationToGlassfish.JPG" /></a>
 
 * Open the application in a browser
 
-<a href="/images/CCinNBHowTo\014_OpenAppInBrowser.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\014_OpenAppInBrowser.JPG" /></a>
+<a href="/images/CCinNBHowTo/014_OpenAppInBrowser.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo/014_OpenAppInBrowser.JPG" /></a>
 
 
 h3.  Creating a ManagedBean
@@ -132,34 +132,34 @@ h3.  Creating a ManagedBean
 * Ensure the application is compiled and deployed via Netbeans.
 * In CaptainCasa Editor open the **Bean Browser**.  A ManagedBean called @d@ of type **Dispatcher** should be visible. (This helper class allows beans to be added without having to modify @face-config.xml@, see the developer documentation).
 
-<a href="/images/CCinNBHowTo\015_BeanBrowser.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\015_BeanBrowser.JPG" /></a>
+<a href="/images/CCinNBHowTo/015_BeanBrowser.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo/015_BeanBrowser.JPG" /></a>
 
 * Right-click on the @d@ bean and select **Create Bean**
 * Give the bean a name, and press **Create Class**. 
 
-<a href="/images/CCinNBHowTo\016_CreateManagedBean.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\016_CreateManagedBean.JPG" /></a>
+<a href="/images/CCinNBHowTo/016_CreateManagedBean.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo/016_CreateManagedBean.JPG" /></a>
 
 * The **Code Generator** tool is opened and this can be used to create properties and methods.
 
-<a href="/images/CCinNBHowTo\017_AddPropertiesAndMethods.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\017_AddPropertiesAndMethods.JPG" /></a>
+<a href="/images/CCinNBHowTo/017_AddPropertiesAndMethods.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo/017_AddPropertiesAndMethods.JPG" /></a>
 
 * Properties and methods can be dragged and dropped onto component attributes within the editor.
 
-<a href="/images/CCinNBHowTo\018_DragAndDropPropertiesAndMethodsToComponents.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\018_DragAndDropPropertiesAndMethodsToComponents.JPG" /></a>
+<a href="/images/CCinNBHowTo/018_DragAndDropPropertiesAndMethodsToComponents.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo/018_DragAndDropPropertiesAndMethodsToComponents.JPG" /></a>
 
 * **Note:** Explicitly deploy the application in order to copy the class files to the webcontent directory for the CaptainCasa Editor.
 * When viewing the ManagedBean in Netbeans, the imports have to be added (Shift-Ctrl-O)
 * ManagedBeans can also be created directly in Netbeans directly
 
-<a href="/images/CCinNBHowTo\019_CreatingManagedBeanInNetbeans.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\019_CreatingManagedBeanInNetbeans.JPG" /></a>
+<a href="/images/CCinNBHowTo/019_CreatingManagedBeanInNetbeans.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo/019_CreatingManagedBeanInNetbeans.JPG" /></a>
 
 ** Again, remember to deploy the application to refresh the webcontent classes folder
 
-<a href="/images/CCinNBHowTo\020_EnsureWebContentDirIsUpToDate.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\020_EnsureWebContentDirIsUpToDate.JPG" /></a>
+<a href="/images/CCinNBHowTo/020_EnsureWebContentDirIsUpToDate.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo/020_EnsureWebContentDirIsUpToDate.JPG" /></a>
 
 ** When created, press the refresh icon in the CaptainCasa Editor to show the bean. 
 
-<a href="/images/CCinNBHowTo\021_ManagedBeansInCaptainCasaEditor.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\021_ManagedBeansInCaptainCasaEditor.JPG" /></a>
+<a href="/images/CCinNBHowTo/021_ManagedBeansInCaptainCasaEditor.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo/021_ManagedBeansInCaptainCasaEditor.JPG" /></a>
 
 
 h3. Misc. Notes
@@ -167,5 +167,5 @@ h3. Misc. Notes
 
 * Setting the logging level to write to console is useful, but makes the deploy and runtime process slow down considerably.
 
-<a href="/images/CCinNBHowTo\n001_LoggingToConsole.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo\n001_LoggingToConsole.JPG" /></a>
+<a href="/images/CCinNBHowTo/n001_LoggingToConsole.JPG" target="_blank"><img width="75%" src="/images/CCinNBHowTo/n001_LoggingToConsole.JPG" /></a>
 

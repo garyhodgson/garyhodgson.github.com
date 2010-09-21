@@ -1,0 +1,66 @@
+---
+layout: post
+title: accessing git via git-cvsserver via eclipse
+---
+
+h2. {{ page.title }}
+<br/>
+
+Recently I wanted to set up git-cvsserver for some git repositories and a couple of points tripped me up, particularly when trying to access the repositories via eclipse.  It all seems obvious with 20:20 hindisight, but i'm posting this in the hope it saves others some time.
+
+* One thing I didn't immediately realise, is that there doesn't have to be a "git-cvsserver" process running on the server if you plan on accessing the repos over ssh via ext
+* The git repository has to be *bare* and have the following entry in the *config* file: 
+<br>
+
+bc. [gitcvs]
+   enabled = 1
+
+<br>
+* You should be able to checkout the git repo using something similar to the following cvs command:
+<br>
+
+bc. cvs -d ":ext;CVS_SERVER=git cvsserver:username@server/path/to/repo.git" co master
+
+<br>
+
+Checking out a repo via eclipse (as detailed in the "git-cvsserver manual":http://www.kernel.org/pub/software/scm/git/docs/git-cvsserver.html) didn't work.  The response from the server always timed out.  After trying several permutations it transpires I needed to setup ssh key access between my client and the server. So the steps would be:
+
+* In eclipse (SSH2 Section), or using *ssh-keygen*, generate a ssh2 key pair
+<br>
+
+bc. ssh-keygen -t rsa
+
+<a href="/images/GitCvsServer/1.png" target="_blank"><img width="75%" src="/images/GitCvsServer/1.png" /></a>
+<br>
+* Manually copy, or use *ssh-copy-id*, to copy the _public_ key to server (in the ~/.ssh/authorized_keys file)
+<br>
+
+bc. ssh-copy-id -i ~/.ssh/id_rsa username@server
+
+<br>
+* In eclipse (Ext Connection Method Section) set the *CVS_SERVER* parameter to: @git cvssserver@
+<a href="/images/GitCvsServer/2.png" target="_blank"><img width="75%" src="/images/GitCvsServer/2.png" /></a>
+<br>
+<br>
+
+To import a project:
+
+* Choose *import project* -> *Projects from CVS*
+* Create a new repository location
+* Enter the server details, select *Connection type*: @ext@
+<br>
+<a href="/images/GitCvsServer/3.png" target="_blank"><img width="75%" src="/images/GitCvsServer/3.png" /></a>
+<br>
+* Either enter the branch name directly (e.g. master) or choose from the list (this will connect to the server and so test whether the connection is valid)
+<br>
+<a href="/images/GitCvsServer/4.png" target="_blank"><img width="75%" src="/images/GitCvsServer/4.png" /></a>
+<br>
+* Choose to checkout the project using the New Project Wizard, or directly name the project
+<br>
+<a href="/images/GitCvsServer/5.png" target="_blank"><img width="75%" src="/images/GitCvsServer/5.png" /></a>
+<br>
+* Choose a workspace to save the project and click Finish
+<br>
+<a href="/images/GitCvsServer/6.png" target="_blank"><img width="75%" src="/images/GitCvsServer/6.png" /></a>
+<br>
+<br>

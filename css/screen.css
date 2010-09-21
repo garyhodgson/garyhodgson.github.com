@@ -206,7 +206,7 @@ ul .time {
 
 .post {
 	min-height: 400px;
-	width: 27em;
+	width: 28em;
 }
 
   /* standard */
@@ -214,7 +214,7 @@ ul .time {
   .post pre {
   	border: 1px solid #ddd;
     background-color: #eef;
-    padding: 0 .4em;
+    
   }
 
   .post ul,

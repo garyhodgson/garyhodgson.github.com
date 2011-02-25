@@ -6,8 +6,8 @@ title: garyhodgson.github.com
 <div id="home">
 
   <h1>Latest Blog Posts <a href="posts.html">&nbsp;&#0187;</a></h1>
-  <ul class="posts">
-    {% for post in site.posts limit:5 %}
+  <ul class="postlist">
+    {% for post in site.posts limit:10 %}
       <li><span class='time'>{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>

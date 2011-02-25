@@ -1,6 +1,6 @@
 ---
 layout: post
-title: accessing git via git-cvsserver via eclipse
+title: Accessing git via git-cvsserver via eclipse
 ---
 
 h2. {{ page.title }}
@@ -19,7 +19,8 @@ bc. [gitcvs]
 * You should be able to checkout the git repo using something similar to the following cvs command:
 <br>
 
-bc. cvs -d ":ext;CVS_SERVER=git cvsserver:username@server/path/to/repo.git" co master
+bc. cvs -d ":ext;CVS_SERVER=git \
+	cvsserver:username@server/path/to/repo.git" co master
 
 <br>
 

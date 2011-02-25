@@ -59,42 +59,28 @@ table {
 /*
 /*****************************************************************************/
 
-ul.posts {
+ul.postlist {
   list-style-type: none;
-  width: 27em;
+  width: 40em;
   margin-bottom: 2em;
+  min-height: 250px;
 }
 
-	ul.posts li{
-	  margin-bottom: 0.5em;
-	}
+ul.postlist li{
+  margin-bottom: 0.5em;
+}
 
-	ul.posts a {
-		padding: .5em;
-		-webkit-border-radius: 5px;
-		-moz-border-radius: 5px;
-		-khtml-border-radius: 5px;
-		border-radius: 5px;
-	}
-
-ul.commands {
-  list-style-type: none;
-  width: 30em;
-  margin-bottom: 2em;
-  margin-left: -5px;
-}    
-
-	ul.commands a {
-		padding: .5em;
-		-webkit-border-radius: 5px;
-		-moz-border-radius: 5px;
-		-khtml-border-radius: 5px;
-		border-radius: 5px;   
-	}
+ul.postlist a {
+	padding: .5em;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+}
 
 ul.tweets {
   list-style-type: none;
-  width: 30em;
+  width: 60em;
   margin-bottom: 2em;
 }
 
@@ -112,7 +98,7 @@ ul .time {
 
 .backgroundimage {
 	border: 1px solid white;
-	width: 60em;
+	width: 70em;
 	margin: 0 auto 0 auto;
 	background: white url('/images/strawberry.jpg') no-repeat top right;
 }
@@ -120,7 +106,7 @@ ul .time {
 .site {
   font-size: 110%;
   text-align: left;
-  width: 40em;
+  width: 60em;
   margin: 3em auto 2em auto;
   line-height: 1.5em;
 }
@@ -190,7 +176,7 @@ ul .time {
 
 .posts {
 	min-height: 250px;
-	width: 27em;
+	width: 40em;
 }
 
 .navigation a {
@@ -206,15 +192,44 @@ ul .time {
 
 .post {
 	min-height: 400px;
-	width: 28em;
+	width: 40em;
 }
 
   /* standard */
 
+.str { color: #600; }
+.kwd { color: #006; font-weight: bold; }
+.com { color: #050; }
+.typ { color: #404; font-weight: bold; }
+.lit { color: #044; }
+.pun { color: #440; }
+.pln { color: #000; }
+.tag { color: #006; font-weight: bold; }
+.atn { color: #404; }
+.atv { color: #060; }
+
+@media print {
+  .str { color: #060; }
+  .kwd { color: #006; font-weight: bold; }
+  .com { color: #600; font-style: italic; }
+  .typ { color: #404; font-weight: bold; }
+  .lit { color: #044; }
+  .pun { color: #440; }
+  .pln { color: #000; }
+  .tag { color: #006; font-weight: bold; }
+  .atn { color: #404; }
+  .atv { color: #060; }
+}
+
   .post pre {
-  	border: 1px solid #ddd;
-    background-color: #eef;
-    
+	background: #F0F0F0 url('../images/shadow.png') repeat-x 0 0;
+	padding: 1em;
+	overflow: auto;
+	color: #404040;
+	font-size: 0.9em;
+	font-family: 'Inconsolata', Monaco, "Courier New", Courier, monospace;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;    
   }
 
   .post ul,
@@ -222,34 +237,6 @@ ul .time {
     margin-left: 1.25em;
   }
 
-  .post code {
-    border: 1px solid #ddd;
-    background-color: #eef;
-    font-size: 95%;
-    padding: 0 .2em;
-  }
-
-    .post pre code {
-      border: none;
-    }
-
-  /* terminal */
-
-  .post pre.terminal {
-    border: 1px solid black;
-    background-color: #333;
-    color: white;
-  }
-  
-  .post pre.white {
-    border: 0px solid black;
-    background-color: #fff;
-    color: red;
-  }
-
-  .post pre.terminal code {
-    background-color: #333;
-  }
 
 #related {
   margin-top: 2em;

@@ -36,7 +36,7 @@ bc. ssh-keygen -t rsa
 * Manually copy, or use *ssh-copy-id*, to copy the _public_ key to server (in the ~/.ssh/authorized_keys file)
 <br>
 
-bc. ssh-copy-id -i ~/.ssh/id_rsa username@server
+bc. ssh-copy-id -i ~/.ssh/id_rsa.pub username@server
 
 <br>
 * In eclipse (Ext Connection Method Section) set the *CVS_SERVER* parameter to: @git cvssserver@

@@ -1,0 +1,46 @@
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+.block {
+  text-align: center;
+  min-height: 300px;
+}
+
+.block h3 {
+  margin: -35px auto 0 auto;
+  background-color:  #FFF;
+  z-index: 1;
+  position:relative;
+  font-weight: normal;
+  font-size: 1.5em;  
+  max-width: 300px;
+}
+
+.block img {
+  opacity: 0.6;
+  z-index: -1;
+ 
+}
+
+.block a:hover img{
+  opacity: 1; 
+}
+
+#contact {
+  position: fixed;
+  left:10px;
+  top: 50px;
+  z-index: 1;
+}
+
+#contact a {
+  text-decoration:none;
+}
+
+#contact img {
+  border: 0;
+  width: 34px;
+  height: 34px;
+}

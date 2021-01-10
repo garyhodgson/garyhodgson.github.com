@@ -1,20 +1,167 @@
----
-layout: default
-title: garyhodgson.github.com
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>garyhodgson.com</title>
 
-<div id="home">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal landing page for garyhodgson.com">
+    <meta name="author" content="Gary Hodgson">
 
-  <h1>Latest Blog Posts <a href="posts.html">&nbsp;&#0187;</a></h1>
-  <ul class="postlist">
-    {% for post in site.posts limit:10 %}
-      <li><span class='time'>{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
- 
-	<h1>Latest Twitter Updates <a href="http://twitter.com/garyhodgson">&nbsp;&#0187;</a></h1>
-	<ul class="tweets" id="twitter_update_list"><img src="images/ajax-loader.gif"></ul>
+    <link rel="openid.server" href="http://www.myopenid.com/server" />
+    <link rel="openid.delegate" href="http://garyhodgson.myopenid.com/" />
 
-</div>
-  
-<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/garyhodgson.json?callback=twitterCallback2&amp;count=5"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+
+    <div class="container">
+
+
+      <div class="row">
+
+        <div class="span4 block">
+          <a href="https://garyhodgson.github.io/woodwork">
+            <img src="img/woodwork.gif">
+            <h3>Woodwork</h3>
+          </a>
+        </div>
+
+        <div class="span4 block">
+          <a href="https://www.instagram.com/woodbeatnik/">
+            <img src="img/woodwork_instagram.gif">
+            <h3>Woodwork on Instagram</h3>
+          </a>
+        </div>
+
+        <div class="span4 block">
+          <a href="https://flic.kr/s/aHsmTyJYaH">
+            <img src="img/photography.gif">
+            <h3>Photography</h3>
+          </a>
+        </div>
+
+      </div>
+
+
+      <br>
+
+      <div class="row">
+
+        <div class="span4 block">
+          <!-- <a href="/reprap"> -->
+            <img src="img/blog.gif">
+            <h3>[Offline] RepRap Blog</h3>
+          <!-- </a> -->
+        </div>
+
+        <div class="span4 block">
+          <a href="http://garyhodgson.github.io/thingtracker.net">
+            <img src="img/thing_tracker_network.gif">
+            <h3>[Deprecated] Thing Tracker Network</h3>
+          </a>
+        </div>
+
+        <div class="span4 block">
+          <a href="https://github.com/garyhodgson/Development-Tracker">
+            <img src="img/development_tracker.gif">
+            <h3>[Deprecated] RepRap Development Tracker</h3>
+          </a>
+        </div>
+
+
+      </div>
+
+
+      <br>
+
+      <div class="row">
+
+        <div class="span4 block">
+          <a href="https://github.com/garyhodgson/prusa_mendel_visual_instructions/releases/tag/v5">
+            <img src="img/prusa_visual_instructions.gif">
+            <h3>[Deprecated] Prusa Mendel<br>Visual Instructions</h3>
+          </a>
+        </div>
+
+        <div class="span4 block">
+          <a href="https://github.com/garyhodgson/wades_geared_extruder_visual_instructions/releases/tag/v1">
+            <img src="img/wades_visual_instructions.gif">
+            <h3>[Deprecated] Wade's Geared Extruder<br>Visual Instructions</h3>
+          </a>
+        </div>
+
+        <div class="span4 block">
+          <a href="https://reprap.org/wiki/DeveloperBookshelf">
+            <img src="img/developer_bookshelf.gif">
+            <h3>RepRap Developer Bookshelf</h3>
+          </a>
+        </div>
+
+      </div>
+
+      <br>
+
+      <div class="row">
+
+        <div class="span4 block">
+          <a href="http://garyhodgson.github.com/frep-csg.js/">
+            <img src="img/frep_csg.gif">
+            <h3>FREP CSG</h3>
+          </a>
+        </div>
+
+        <div class="span4 block">
+          <a href="http://garyhodgson.github.com/openscad.net/">
+            <img src="img/openscad_net.gif">
+            <h3>[Deprecated] OpenSCAD.net</h3>
+          </a>
+        </div>
+
+        <div class="span4 block">
+          <a href="https://github.com/garyhodgson/SkeinforgeEngine">
+            <img src="img/skeinforge_engine.gif">
+            <h3>[Deprecated] Skeinforge Engine</h3>
+          </a>
+        </div>
+
+      </div>
+
+      <br>
+
+      <div class="row">
+
+        <div class="span4 block">
+          <a href="http://garyhodgson.com/reprap/2012/09/githubiverse-a-github-pages-template-for-3d-printing-projects/">
+            <img src="img/githubiverse.gif">
+            <h3>[Deprecated] Githubiverse Template</h3>
+          </a>
+        </div>
+
+        <div class="span4 block">
+          <a href="/reprap/projectlayer">
+            <img src="img/projectlayer.gif">
+            <h3>[Deprecated] ProjectLayer</h3>
+          </a>
+        </div>
+
+        <div class="span4 block">
+          <a href="https://github.com/garyhodgson/3D-Printroom">
+            <img src="img/3d_printroom.gif">
+            <h3>[Deprecated] 3D-Printroom</h3>
+          </a>
+        </div>
+
+      </div>
+
+      <br>
+
+    </div>
+
+  </body>
+</html>
